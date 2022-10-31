@@ -1,0 +1,10 @@
+.d {
+   
+    padding: 15px;
+    width: 60%;
+    margin: auto;
+    border-style: solid;
+    border-color: red green blue yellow;
+    border-width: 8px;
+    border-radius: 50px;
+}

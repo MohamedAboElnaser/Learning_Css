@@ -1,4 +1,23 @@
-.parag{
+.parag {
     font-size: 50px;
-    color: rgb(15, 250, 15);
+    color: rgb(245, 17, 17);
+    
 }
+.target {
+    font-size: 20px;
+    color: rgb(211, 158, 14);
+}
+
+.div {
+    font-size: medium;
+    color: chartreuse;
+}
+body {
+    background-color: rgb(6, 44, 44);
+    background-image: url("../images/photo.jpg");
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size:  auto;
+    background-attachment:  fixed;
+}
+ 

@@ -1,0 +1,86 @@
+/*-------------------------------------first assignment-------------------------------------*/
+
+/*it means apply these properties to any alement with the class name =title*/
+.title {
+    color: red;
+}
+
+/* it means apply these properties to any alement with the id name =title */
+#nav {
+    color: green;
+}
+
+/* it means apply these properties to any div in the page */
+div {
+    size: 30px;
+}
+
+/* it means apply these properites to all h2 elements within the page */
+h2 {
+    padding: 34px;
+}
+
+/*-------------------------------------fifth assignment-------------------------------------*/
+/* 
+._user-name {
+}
+
+/* ?
+.-user-name {
+    not
+}
+
+/* ?
+.-user-name {
+    valid
+} */
+
+/* ?
+.1user-name {
+    not
+} */
+
+/* ?
+.@user-name {
+    not
+} */
+
+/* ?
+.user@name {
+    not
+} */
+
+/* ? */
+/* ._user10name {
+    valid
+}
+
+/* ? */
+/* .u {
+    valid
+} */ 
+/*-------------------------------------sixth assignment-------------------------------------*/
+/* ? */
+/* .USERNAME {   bad  
+}
+
+/* bad */
+.UserName { 
+    size: 30px;
+}
+
+/* good*/
+.user-name {
+    size: 30px;   
+}
+
+/* bad*/
+.userName {  
+    size: 30px;
+}
+
+
+/* bad */
+.usernameprofile {  
+    size: 30px;
+}  
