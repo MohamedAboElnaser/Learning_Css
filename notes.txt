@@ -8,11 +8,11 @@ selector{
 selector may be -->id
                 -->class
 
-in case it is id the syntax will be like that
+in case it is class the syntax will be like that
 .elemnt-name{
     property: value;
 }
-in case it is class the syntax will be like that
+in case it is id the syntax will be like that
 #class-name{
     property :value;
     
