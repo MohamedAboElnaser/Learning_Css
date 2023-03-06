@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week-three</title>
+    <style>
+       
+       div{
+        position: absolute;
+        left: 100px;
+
+       } 
+       .second-child{
+            padding: 5px;
+            margin: 10px;
+            width: 400px;
+            background-color: #eee;
+            list-style: none;
+            
+        }
+        .html-child li{
+            background-color: white;
+            margin: 5px;
+            
+        }
+        .html-child {
+            padding-left: 20px;
+        }
+        .css-child li{
+            background-color: white;
+            margin: 5px;
+        }
+        .css-child{
+            padding-left: 20px;
+        }
+        .js-child li{
+            background-color: white;
+            margin: 5px;
+            list-style-position: inside;
+        }
+        .js-child{
+            padding-left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul class="parent">
+            <li class="second-child">
+              HTML
+              <ol class="html-child" type="1" start="10">
+                <li>Slim</li>
+                <li>Pugjs</li>
+                <li>HAML</li>
+              </ol>
+            </li>
+            <li class="second-child">
+              CSS
+              <ol class="css-child" type="I" start="X-UA-Compatible ">
+                <li>SASS</li>
+                <li>LESS</li>
+                <li>PostCSS</li>
+              </ol>
+            </li>
+            <li class="second-child">
+              JavaScript
+              <ul class="js-child">
+                <li>Vuejs</li>
+                <li>Sveltejs</li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
