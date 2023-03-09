@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week-four</title>
+    <style>
+       div {
+    width: 100px;
+    height: 100px;
+    border: solid 4px black;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 30px;
+    counter-increment: count;
+    position: relative;
+    box-shadow: 8px 7px 0px 0px blue, -12px -6px 0px 0px #ff0099;
+}
+        div::before{
+            content: counter(count);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: black;
+            text-align: center;
+            color: white;
+            position: absolute;
+            top: 0px;
+            left: 40px;
+            margin-top: -10px;
+        }
+        div::after {
+            content: "Element";
+            position: absolute;
+            top: 42px;
+            left: 25px;
+            
+        }   
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>
