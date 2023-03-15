@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .parent {
+        display: flex;
+        width: 600px;
+        height: 300px;
+        background-color: #eee;
+        margin: 3px auto;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+      }
+      .parent div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: calc(94% / 3);
+        color: white;
+        background-color: rgb(96,125 ,139);
+      }
+      .one,.three{
+        height: 54px;
+      }
+      .two,.four,.five,.six{
+        height: 50%;
+      }
+      .one{
+        order: 5;
+        align-self: flex-end;
+      }
+      .two{
+        order: 4;
+      }
+      .three{
+        order: 1;
+      }
+      .four{
+        order: 2;
+      }
+      .five{
+        order: 2;
+      }
+    </style>
+    <title>week-five</title>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="one">1</div>
+      <div class="two">2</div>
+      <div class="three">3</div>
+      <div class="four">4</div>
+      <div class="five">5</div>
+      <div class="six">6</div>
+    </div>
+  </body>
+</html>
