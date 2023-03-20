@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>week-6.2</title>
+    <style>
+      div {
+        position: relative;
+        width: 600px;
+        margin: 3px auto;
+      }
+      input {
+        display: block;
+        width: 600px;
+        height: 50px;
+        padding-left: 10px;
+        font-weight: bold;
+        margin: 30px auto;
+        background-color: rgb(244, 244, 244);
+        border-style: none;
+        position: relative;
+        caret-color: rgb(250, 104, 104);
+      }
+      div::before {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0px;
+        height: 3px;
+        width: 612px;
+        background-image: linear-gradient(
+          to right,
+          rgb(244, 67, 54) 50%,
+          rgb(77, 182, 172) 50%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div><input type="tex" placeholder="AboElnasr" autofocus /></div>
+    <div><input type="tex" placeholder="Two" /></div>
+    <div><input type="tex" placeholder="three" /></div>
+  </body>
+</html>
