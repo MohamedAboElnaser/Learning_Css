@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>week-6</title>
+    <style>
+      :root {
+        --first-color: rgb(244, 67, 54);
+        --second-color: rgb(33, 150, 243);
+        --third-color: rgb(76, 175, 80);
+        --fourth-color: rgb(233, 30, 99);
+        --fifth-color: rgb(103, 58, 183);
+      }
+      div {
+        display: block;
+        position: relative;
+        width: 600px;
+        height: 100px;
+        margin: 20px auto;
+        line-height: 100px;
+        text-align: center;
+        background-color: #eee;
+        border-left: var(--first-color) 7px solid;
+        border-right: var(--fifth-color) 7px solid;
+        font-weight: bold;
+        letter-spacing: 5px;
+        font-size: 30px;
+      }
+      div::before {
+        content: "";
+        position: absolute;
+        top: -7px;
+        left: -7px;
+        width: 614px;
+        height: 7px;
+        /* background-color: green; */
+        background-image: linear-gradient(
+          to right,
+          var(--first-color) 20%,
+          var(--second-color) 20%,
+          var(--second-color) 40%,
+          var(--third-color) 40%,
+          var(--third-color) 60%,
+          var(--fourth-color) 60%,
+          var(--fourth-color) 80%,
+          var(--fifth-color) 80%
+        );
+      }
+      div::after {
+        content: "";
+        position: absolute;
+        bottom: -7px;
+        left: -7px;
+        width: 614px;
+        height: 7px;
+        /* background-color: green; */
+        background-image: linear-gradient(
+          to right,
+          var(--first-color) 20%,
+          var(--second-color) 20%,
+          var(--second-color) 40%,
+          var(--third-color) 40%,
+          var(--third-color) 60%,
+          var(--fourth-color) 60%,
+          var(--fourth-color) 80%,
+          var(--fifth-color) 80%
+        );
+      }
+       div::first-letter{
+        content: "";
+            color:var(--first-color);
+      }
+    </style>
+  </head>
+  <body>
+    <div>AboElnasr</div>
+  </body>
+</html>
