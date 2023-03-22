@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>week-6.2</title>
+    <style>
+      * {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 28px;
+      }
+      .grid {
+        background-color: #ddd;
+        margin: 0 auto;
+        padding: 20px;
+        width: 800px;
+        height: 400px;
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 50px 1fr;
+        gap: 20px;
+      }
+      .grid div {
+        background-color: rgb(96, 125, 139);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        counter-increment: conter-var;
+      }
+      .grid div::before {
+        content: "Element";
+        color: white;
+        position: absolute;
+      }
+      .grid div::after {
+        content: counter(conter-var);
+        position: absolute;
+        left: 72%;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>

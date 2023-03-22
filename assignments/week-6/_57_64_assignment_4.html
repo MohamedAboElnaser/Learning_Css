@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>week-6</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;    
+        font-size: 30px;
+     
+      }
+      .grid {
+        background-color: #ddd;
+        padding: 20px;
+        width: 800px;
+        height: 400px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap:15px;
+        margin: 0px auto;
+      }
+      .grid div {
+        background-color: rgb(32, 150, 243);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+      .one {
+        order: 8;
+        grid-column: 1/span 3;
+      }
+      .two{
+        grid-column: 1/span 2;
+      }
+      .five{
+        grid-column: 2/span 2;
+        grid-row: 3/span 3;
+      }
+      .eight {
+        order: -1;
+        grid-column:1 /span 3  ;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="one">1</div>
+      <div class="two">2</div>
+      <div class="three">3</div>
+      <div class="four">4</div>
+      <div class="five">5</div>
+      <div class="six">6</div>
+      <div class="seven">7</div>
+      <div class="eight">8</div>
+    </div>
+  </body>
+</html>
