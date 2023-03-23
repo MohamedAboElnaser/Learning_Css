@@ -43,7 +43,10 @@
         
         transition: .5s transform ;
       }
-      div:hover::after,
+      div:hover::after
+      {
+        transform: rotate(-360deg);
+      }
       div:hover::before{
         transform: rotate(360deg);
       }
