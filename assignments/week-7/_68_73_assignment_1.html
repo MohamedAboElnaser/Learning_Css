@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      :root {
+        --main-color: rgb(255, 87, 34);
+      }
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      h1 {
+        display: block;
+        color: white;
+        width: 150px;
+        margin: 50px auto;
+        padding: 5pxpx;
+        font-size: 2em;
+        background-color: var(--main-color);
+        text-align: center;
+        position: relative;
+      }
+      h1::before {
+        content: "";
+        width: 152px;
+        height: 40px;
+        background-color: var(--main-color);
+        position: absolute;
+        right: -1px;
+        top: 0px;
+        z-index: -1;
+        transform: rotate(12deg) skewX(-315deg);
+      }
+      h1::after {
+        content: "";
+        width: 152px;
+        height: 40px;
+        background-color: var(--main-color);
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        z-index: -1;
+        transform: rotate(-12deg) skewX(315deg);
+      }
+    </style>
+    <title>week-7.2</title>
+  </head>
+  <body>
+    <h1>Elzero</h1>
+  </body>
+</html>

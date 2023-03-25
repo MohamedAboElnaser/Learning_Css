@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>week-7</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      :root {
+        --main-color: rgb(0, 150, 136);
+      }
+      h1 {
+        display: block;
+        width: 150px;
+        background-color: var(--main-color);
+        color: white;
+        text-align: center;
+        margin: 20px auto;
+        padding: 10px;
+        position: relative;
+      }
+      h1::before {
+        display: inline-block;
+        content: "";
+        width: 41px;
+        height: 57px;
+        background-color: var(--main-color);
+        position: absolute;
+        left: -12px;
+        top: 0px;
+        transform: skewX(20deg);
+      }
+      h1::after {
+        display: inline-block;
+        content: "";
+        width: 20px;
+        height: 57px;
+        background-color: var(--main-color);
+        position: absolute;
+        left: -40px;
+        top: 0px;
+        transform: skewX(20deg);
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1>Elzero</h1>
+  </body>
+</html>

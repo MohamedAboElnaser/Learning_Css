@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>week-7</title>
+    <style>
+      div {
+        display: block;
+        width: 200px;
+        height: 200px;
+        background-color: black;
+        margin: 70px auto;
+        /* position: relative; */
+        border: white 5px solid;
+        border-left: none;
+        border-top: none;
+        transform: rotate(45deg);
+        z-index: 0;
+      }
+      div::after {
+        display: flex;
+        content: " AboElnasr";
+        justify-content: flex-start;
+        align-items: flex-end;
+        border-bottom: black solid 5px;
+        color: white;
+        width: 200px;
+        height: 200px;
+        background-color: rgb(96, 125, 139);
+        transform: scale(1.5) rotate(-45deg) translateY(50%);
+        position: absolute;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
